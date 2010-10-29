@@ -27,9 +27,9 @@ SC.TapGesture = SC.Gesture.extend({
   
   touchEnd: function(touchEntry, evt) {
     if (!SC.none(evt)) {
-      return;
-    } else {
       sc_super();
+    } else {
+      return;
     }
   }
 });
