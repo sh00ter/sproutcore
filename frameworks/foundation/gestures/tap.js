@@ -23,5 +23,13 @@ SC.TapGesture = SC.Gesture.extend({
       this.trigger(touch);
       this.discardTouch(touch);
     }
+  },
+  
+  touchEnd: function(touchEntry, evt) {
+    if (!SC.none(evt)) {
+      return;
+    } else {
+      sc_super();
+    }
   }
 });
